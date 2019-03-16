@@ -1,0 +1,17 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js",
+    "compile:sass": "node-sass --include-path sass sass/main.scss public/stylesheets/style.css"
+  },
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "3.2.6"
+  },
+  "devDependencies": {
+    "node-sass": "^4.11.0",
+    "webpack": "^4.29.6"
+  }
+}
