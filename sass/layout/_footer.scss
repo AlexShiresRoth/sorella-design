@@ -1,0 +1,28 @@
+
+
+footer {
+    width: 100vw;
+    min-height:5rem;
+    background:#999;
+    padding:1rem;
+    margin:0;
+    color:$main-white-color;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    
+    & h3{
+        font-size: 1.5rem;
+        letter-spacing:3px;
+        font-weight:300;
+    }
+    & a{
+        font-size:1.5rem;
+        padding:1rem;
+    }
+}
+
+.social-media__list{
+    margin:1rem 0;
+}

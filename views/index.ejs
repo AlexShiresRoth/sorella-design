@@ -2,29 +2,67 @@
     
     <main class="main__content">
       
-        <header class="header__main">
-              <h1 class="header__main--h1"><%= title %></h1>
-                <% for(let val of slogans) { %>
-                  <p><%= val %> </p>
-                  <% } %>
-        </header>
+      <header>
+        <div class="header__main">
+          <h1 class="header__main--h1"><%= title %></h1>
+            <hr>
+            <div class="header__main--slogan">
+              <% for(let val of slogans) { %>
+                  <p><%= val %></p>
+                <% } %>
+            </div>
+          </div>
+      </header>
         
         <section class="about__section">
+          <div class="title__column">
             <h2> <%= about.title %> </h2>
-            <p> <%= about.content %> </p>
+              <hr>
+            </div>
+            <div class="section__row--grid">
+              <div class="about__section--content image-with-text">
+                <img src="../images/<%=about.images[0]%>" class="image__round">
+                <p> <%= about.content %> </p>
+              </div>
+              <div class="about__section--content column-2-wide">
+                <p> <%= about.content %> </p>
+              </div>
+               <div class="about__section--content column-2-wide">
+                <p> <%= about.content %> </p>
+              </div>
+               <div class="about__section--content column-2-wide">
+                <p> <%= about.content %> </p>
+              </div>
+            </div>
         </section>
         
         <section class="gallery__section">
+          <div class="title__column">
             <h2>Gallery</h2>
+            <hr>
+          </div>
+          <div class="gallery__grid">
+            <% for(let img of gallery) { %>
+              <div class="img__container">
+                  <img src="../images/<%=img%>">
+                </div>
+              <% } %>
+            </div>
         </section>
         
         <section class="whatwedo__section">
             
         </section>
    </main>
+   
    <footer>
-      <ul class="social-media__list">
-          <li>Fb Twitter Insta</li>
+     <div class="footer__title">
+        <h3>Follow Sorella Design:</h3>
+     </div>
+      <div class="social-media__list">
+          <a><i class="fab fa-facebook-f"></i></a>
+          <a><i class="fab fa-instagram"></i></a>
+          <a><i class="fab fa-twitter"></i></a>
       </ul>
    </footer>
 <% include partials/footer %>

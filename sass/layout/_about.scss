@@ -1,0 +1,15 @@
+.image-with-text{
+    padding:1rem;
+    
+    & p{
+        padding-right:2rem;
+    }
+}
+.image__round{
+    float:left;
+    border:5px solid $color-orange;
+    width: 10rem;
+    height: 10rem;
+    border-radius:50%;
+    shape-outside: circle(50%);
+}
