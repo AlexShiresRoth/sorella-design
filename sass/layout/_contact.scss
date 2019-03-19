@@ -1,0 +1,40 @@
+.contact-form__section{
+    background:$color-orange;
+    min-height:50vh;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    padding:3rem;
+    
+    & h2{
+        font-size:3rem;
+    }
+    
+    &--button{
+        border:0;
+        background:darken($color-orange,20%);
+        color:$main-white-color;
+        padding:1rem;
+        transition: all .2s;
+        border-bottom-right-radius:3px;
+        border-top-right-radius:3px;
+        &:hover{
+            cursor:pointer;
+            background:$color-orange;
+        }
+    }
+}
+
+.form__container{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:1rem;
+    min-height:20rem;
+    width:50%;
+    background:$main-white-color;
+    border-radius:3px;
+    box-shadow: 0 2px 2px darken($color-orange, 20%);
+}

@@ -1,18 +1,18 @@
 header{
     width:100vw;
-    padding:2rem;
+    padding:1.7rem;
 }
 .header__main{
-    background: url(../images/background.jpg);
+    background: url(../images/background.jpg) no-repeat;
     border-radius:1px;
     top:0px;
 	left:0px;
 	right:0px;
-	height:90vh;
+	height:95vh;
     width:100%;
     background-size:cover;
     background-position:center;
-    background-repeat:no-repeat;
+    background-attachment: fixed;
     padding:1rem;
     display:flex;
     flex-direction:column;
@@ -24,7 +24,7 @@ header{
     &--slogan{
         display:flex;
         flex-direction:row;
-        font-size:1.2rem;
+        font-size:1.4rem;
         justify-content:space-around;
         
         & p{

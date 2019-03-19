@@ -27,6 +27,18 @@ section{
         font-size:1.2rem;
     }
 }
+//inputs////////////////////////////////////////////////////////////////////////////////////////////
+
+input{
+    padding: 1rem;
+    border:0;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius:3px;
+    background: darken($main-white-color,20%);
+    &:focus{
+        outline:none;
+    }
+}
 //rows//////////////////////////////////////////////////////////////////////////////////////////////
 .section__row--grid{
     display:grid;
@@ -40,6 +52,12 @@ section{
     display:flex;
     flex-direction:row;
     padding:1rem;
+}
+
+.input__row{
+    display:flex;
+    flex-direction:row;
+    margin:1rem 0;
 }
 //columns/////////////////////////////////////////////////////////////////////////////////////////////
 .column-2-wide{
