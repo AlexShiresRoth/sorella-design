@@ -7,9 +7,16 @@
 }
 .image__round{
     float:left;
-    border:5px solid $color-orange;
-    width: 10rem;
-    height: 10rem;
+    border:2px solid darken($main-white-color,20%);
+    width: 12rem;
+    height: 12rem;
     border-radius:50%;
     shape-outside: circle(50%);
+}
+
+.about__section{
+    
+    &--content{
+        box-shadow: 0 1px 1px darken($main-white-color,10%);
+    }
 }

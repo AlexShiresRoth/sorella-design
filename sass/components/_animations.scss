@@ -1,0 +1,8 @@
+@keyframes inputHover{
+    0%{
+        border:1px solid transparent;
+    }
+    100%{
+         border:1px solid darken($color-orange,10%);    
+      }
+}

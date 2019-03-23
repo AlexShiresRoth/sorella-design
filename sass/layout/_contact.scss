@@ -1,5 +1,4 @@
 .contact-form__section{
-    background:$color-orange;
     min-height:50vh;
     display:flex;
     flex-direction:row;
@@ -13,15 +12,23 @@
     
     &--button{
         border:0;
-        background:darken($color-orange,20%);
+        background:$color-orange;
         color:$main-white-color;
         padding:1rem;
         transition: all .2s;
-        border-bottom-right-radius:3px;
-        border-top-right-radius:3px;
+        width:100%;
         &:hover{
             cursor:pointer;
-            background:$color-orange;
+            background:darken($color-orange,20%);
+        }
+    }
+    
+    & input{
+        transition:all 0s linear infinite;
+        
+        &:hover{
+            animation: .3s inputHover;
+            animation-fill-mode:forwards;
         }
     }
 }
@@ -29,12 +36,11 @@
 .form__container{
     display:flex;
     flex-direction:column;
-    justify-content:center;
     align-items:center;
     padding:1rem;
     min-height:20rem;
-    width:50%;
+    min-width:50vw;
     background:$main-white-color;
     border-radius:3px;
-    box-shadow: 0 2px 2px darken($color-orange, 20%);
+    box-shadow: 0 2px 2px darken($main-white-color, 20%);
 }

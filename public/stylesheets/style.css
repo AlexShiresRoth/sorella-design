@@ -1,10 +1,22 @@
 html,
 body {
-  font-family: 'Work Sans';
+  font-family: 'Raleway';
   font-size: 63%; }
 
 .header__main--h1 {
+  font-family: 'Merriweather';
+  font-weight: 300;
   font-size: 5rem; }
+
+h2 {
+  font-family: 'Merriweather';
+  font-weight: 300; }
+
+@keyframes inputHover {
+  0% {
+    border: 1px solid transparent; }
+  100% {
+    border: 1px solid #ae8319; } }
 
 header {
   width: 100vw;
@@ -32,7 +44,8 @@ header {
     display: flex;
     flex-direction: row;
     font-size: 1.4rem;
-    justify-content: space-around; }
+    justify-content: space-around;
+    margin-bottom: 7rem; }
     .header__main--slogan p {
       margin: 0 .5rem; }
 
@@ -43,11 +56,14 @@ header {
 
 .image__round {
   float: left;
-  border: 5px solid #FF9C59;
-  width: 10rem;
-  height: 10rem;
+  border: 2px solid #cccccc;
+  width: 12rem;
+  height: 12rem;
   border-radius: 50%;
   shape-outside: circle(50%); }
+
+.about__section--content {
+  box-shadow: 0 1px 1px #e6e6e6; }
 
 .gallery__grid {
   display: grid;
@@ -75,7 +91,7 @@ footer {
   background: #999;
   padding: 1rem;
   margin: 0;
-  color: #fffff4;
+  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -92,7 +108,6 @@ footer {
   margin: 1rem 0; }
 
 .contact-form__section {
-  background: #FF9C59;
   min-height: 50vh;
   display: flex;
   flex-direction: row;
@@ -103,27 +118,30 @@ footer {
     font-size: 3rem; }
   .contact-form__section--button {
     border: 0;
-    background: #f26200;
-    color: #fffff4;
+    background: #DAA520;
+    color: #fff;
     padding: 1rem;
     transition: all .2s;
-    border-bottom-right-radius: 3px;
-    border-top-right-radius: 3px; }
+    width: 100%; }
     .contact-form__section--button:hover {
       cursor: pointer;
-      background: #FF9C59; }
+      background: #816213; }
+  .contact-form__section input {
+    transition: all 0s linear infinite; }
+    .contact-form__section input:hover {
+      animation: .3s inputHover;
+      animation-fill-mode: forwards; }
 
 .form__container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   padding: 1rem;
   min-height: 20rem;
-  width: 50%;
-  background: #fffff4;
+  min-width: 50vw;
+  background: #fff;
   border-radius: 3px;
-  box-shadow: 0 2px 2px #f26200; }
+  box-shadow: 0 2px 2px #cccccc; }
 
 .title__column {
   margin-left: 5rem; }
@@ -132,7 +150,7 @@ footer {
 
 hr {
   height: .2rem;
-  background: #FF9C59;
+  background: #DAA520;
   border: 0;
   margin: 1rem 0;
   width: 10rem; }
@@ -149,14 +167,18 @@ section {
   section p {
     font-size: 1.2rem; }
 
-input {
+input, .message {
   padding: 1rem;
-  border: 0;
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
-  background: #ffff8e; }
-  input:focus {
+  border: 1px solid transparent;
+  background: #cccccc; }
+  input:focus, .message:focus {
     outline: none; }
+
+textarea {
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  height: 10rem; }
 
 .section__row--grid {
   display: grid;
@@ -193,4 +215,4 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  background: #fffff4; }
+  background: #fff; }

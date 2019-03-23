@@ -29,15 +29,22 @@ section{
 }
 //inputs////////////////////////////////////////////////////////////////////////////////////////////
 
-input{
+input,.message{
     padding: 1rem;
-    border:0;
-    border-top-left-radius: 3px;
-    border-bottom-left-radius:3px;
+    border:1px solid transparent;
     background: darken($main-white-color,20%);
     &:focus{
         outline:none;
     }
+    &:hover{
+        
+    }
+}
+textarea{
+    margin-left:0;
+    margin-right:0;
+    width:100%;
+    height:10rem;
 }
 //rows//////////////////////////////////////////////////////////////////////////////////////////////
 .section__row--grid{

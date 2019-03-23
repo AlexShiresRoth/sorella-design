@@ -1,12 +1,19 @@
 
 html,
 body{
-    font-family:'Work Sans';
+    font-family:'Raleway';
     font-size:63%;
 }
 
 .header__main{
     &--h1{
+        font-family:'Merriweather';
+        font-weight:300;
         font-size:5rem;
     }
+}
+
+h2{
+    font-family:'Merriweather';
+    font-weight:300;
 }
