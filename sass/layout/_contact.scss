@@ -1,4 +1,8 @@
 .contact-form__section{
+    background: url(../images/background-left.jpg), url(../images/background-right.jpg);
+    background-size:30%, 100%;
+    background-repeat:no-repeat,repeat-x;
+    background-position:center;
     min-height:50vh;
     display:flex;
     flex-direction:row;
@@ -23,7 +27,7 @@
         }
     }
     
-    & input{
+    & input,textarea{
         transition:all 0s linear infinite;
         
         &:hover{
@@ -39,8 +43,8 @@
     align-items:center;
     padding:1rem;
     min-height:20rem;
-    min-width:50vw;
+    min-width:40vw;
     background:$main-white-color;
     border-radius:3px;
-    box-shadow: 0 2px 2px darken($main-white-color, 20%);
+    box-shadow: 0 2px 2px darken($main-white-color, 70%);
 }

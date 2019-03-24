@@ -108,6 +108,10 @@ footer {
   margin: 1rem 0; }
 
 .contact-form__section {
+  background: url(../images/background-left.jpg), url(../images/background-right.jpg);
+  background-size: 30%, 100%;
+  background-repeat: no-repeat,repeat-x;
+  background-position: center;
   min-height: 50vh;
   display: flex;
   flex-direction: row;
@@ -126,9 +130,9 @@ footer {
     .contact-form__section--button:hover {
       cursor: pointer;
       background: #816213; }
-  .contact-form__section input {
+  .contact-form__section input, .contact-form__section textarea {
     transition: all 0s linear infinite; }
-    .contact-form__section input:hover {
+    .contact-form__section input:hover, .contact-form__section textarea:hover {
       animation: .3s inputHover;
       animation-fill-mode: forwards; }
 
@@ -138,10 +142,10 @@ footer {
   align-items: center;
   padding: 1rem;
   min-height: 20rem;
-  min-width: 50vw;
+  min-width: 40vw;
   background: #fff;
   border-radius: 3px;
-  box-shadow: 0 2px 2px #cccccc; }
+  box-shadow: 0 2px 2px #4d4d4d; }
 
 .title__column {
   margin-left: 5rem; }

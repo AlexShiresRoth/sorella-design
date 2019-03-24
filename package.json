@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node app.js",
-    "compile:sass": "node-sass --include-path sass sass/main.scss public/stylesheets/style.css"
+    "compile:sass": "node-sass --include-path sass sass/main.scss public/stylesheets/style.css",
+    "dev": "webpack"
   },
   "dependencies": {
     "ejs": "^2.6.1",
@@ -12,6 +13,7 @@
   },
   "devDependencies": {
     "node-sass": "^4.11.0",
-    "webpack": "^4.29.6"
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
   }
 }
