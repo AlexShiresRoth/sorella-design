@@ -1,15 +1,9 @@
 .contact-form__section{
-    background: url(../images/background-left.jpg), url(../images/background-right.jpg);
-    background-size:30%, 100%;
-    background-repeat:no-repeat,repeat-x;
-    background-position:center;
     min-height:50vh;
     display:flex;
     flex-direction:row;
-    justify-content:center;
     align-items:center;
-    padding:3rem;
-    
+    background: darken($main-white-color,5%);
     & h2{
         font-size:3rem;
     }
@@ -37,14 +31,45 @@
     }
 }
 
+.location__left{
+    min-height:50vh;
+    padding:3rem;
+    background: url(../images/background-left.jpg);
+    background-position: center;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    flex-basis:50%;
+    
+     & h3{
+         @extend %location-text;   
+    }
+    
+}
+.location__right{
+    min-height:50vh;
+    padding:3rem;
+    background: url(../images/background-right.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: flex-end;
+    flex-basis: 50%;
+    
+    & h3{
+     @extend %location-text;   
+    }
+}
+
 .form__container{
     display:flex;
     flex-direction:column;
     align-items:center;
     padding:1rem;
-    min-height:20rem;
-    min-width:40vw;
+    min-height:50vh;
+    min-width:30rem;
     background:$main-white-color;
-    border-radius:3px;
-    box-shadow: 0 2px 2px darken($main-white-color, 70%);
+    box-shadow: 0 1px 1px darken($main-white-color, 70%);
 }

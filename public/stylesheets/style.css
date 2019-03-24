@@ -1,3 +1,7 @@
+.location__left h3, .location__right h3 {
+  font-size: 2.4rem;
+  color: #fff; }
+
 html,
 body {
   font-family: 'Raleway';
@@ -108,16 +112,11 @@ footer {
   margin: 1rem 0; }
 
 .contact-form__section {
-  background: url(../images/background-left.jpg), url(../images/background-right.jpg);
-  background-size: 30%, 100%;
-  background-repeat: no-repeat,repeat-x;
-  background-position: center;
   min-height: 50vh;
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
-  padding: 3rem; }
+  background: #f2f2f2; }
   .contact-form__section h2 {
     font-size: 3rem; }
   .contact-form__section--button {
@@ -136,16 +135,41 @@ footer {
       animation: .3s inputHover;
       animation-fill-mode: forwards; }
 
+.location__left {
+  min-height: 50vh;
+  padding: 3rem;
+  background: url(../images/background-left.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%; }
+
+.location__right {
+  min-height: 50vh;
+  padding: 3rem;
+  background: url(../images/background-right.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-basis: 50%; }
+
 .form__container {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1rem;
-  min-height: 20rem;
-  min-width: 40vw;
+  min-height: 50vh;
+  min-width: 30rem;
   background: #fff;
-  border-radius: 3px;
-  box-shadow: 0 2px 2px #4d4d4d; }
+  box-shadow: 0 1px 1px #4d4d4d; }
+
+h3 {
+  font-family: 'Merriweather';
+  font-weight: 300; }
 
 .title__column {
   margin-left: 5rem; }
