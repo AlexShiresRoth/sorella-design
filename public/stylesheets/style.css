@@ -1,5 +1,5 @@
 .location__left h3, .location__right h3 {
-  font-size: 2.4rem;
+  font-size: 2.8rem;
   color: #fff; }
 
 html,
@@ -163,9 +163,8 @@ footer {
   align-items: center;
   padding: 1rem;
   min-height: 50vh;
-  min-width: 30rem;
-  background: #fff;
-  box-shadow: 0 1px 1px #4d4d4d; }
+  min-width: 40rem;
+  background: #fff; }
 
 h3 {
   font-family: 'Merriweather';
@@ -198,7 +197,7 @@ section {
 input, .message {
   padding: 1rem;
   border: 1px solid transparent;
-  background: #cccccc; }
+  background: #e6e6e6; }
   input:focus, .message:focus {
     outline: none; }
 
