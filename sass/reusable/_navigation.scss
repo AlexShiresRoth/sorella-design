@@ -1,0 +1,48 @@
+.nav__container{
+    position:absolute;
+    top:5%;
+    right:5%;
+    background:$color-orange;
+    height:5rem;
+    width:5rem;
+    border-radius:50%;
+    padding:1rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition:all .3s;
+    &:hover{
+        background: lighten($color-orange, 10%);
+        cursor:pointer;
+        transform:scale(1.1);
+    }
+    
+    & i {
+        color: $main-white-color;
+        font-size:2.5rem;
+    }
+}
+
+.menu {
+    padding:1rem;
+    min-height:15rem;
+    min-width:15rem;
+    position:absolute;
+    top:5%;
+    right:5.5%;
+    background:lighten($color-orange, 10%);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 50%;
+    & a {
+        display:block;
+    }
+    & p {
+        margin:1rem;
+        color:$main-white-color;
+        font-size:2rem;
+    }
+}

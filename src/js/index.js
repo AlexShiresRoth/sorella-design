@@ -1,6 +1,18 @@
+import { toggleNav } from './views/Navigation';
 
-let getElements = () => {
-    let par = document.querySelectorAll('p');
-    console.log(par);
+
+const loadJS = () => {
+    
+    //initialize navmenu toggle
+    toggleNav();
 };
-getElements();
+
+//wait for media and DOM to be ready
+if(document.readyState == 'loading'){
+    document.addEventListener("DOMContentLoaded", loadJS);
+}
+else {
+    loadJS();
+}
+
+

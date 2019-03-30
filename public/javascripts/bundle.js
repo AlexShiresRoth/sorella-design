@@ -90,10 +90,35 @@
 /*!*************************!*\
   !*** ./src/js/index.js ***!
   \*************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("\nlet getElements = () => {\n    let par = document.querySelectorAll('p');\n    console.log(par);\n};\ngetElements();\n\n//# sourceURL=webpack:///./src/js/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _views_Navigation__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./views/Navigation */ \"./src/js/views/Navigation.js\");\n\n\n\nconst loadJS = () => {\n    \n    //initialize navmenu toggle\n    Object(_views_Navigation__WEBPACK_IMPORTED_MODULE_0__[\"toggleNav\"])();\n};\n\n//wait for media and DOM to be ready\nif(document.readyState == 'loading'){\n    document.addEventListener(\"DOMContentLoaded\", loadJS);\n}\nelse {\n    loadJS();\n}\n\n\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
+
+/***/ }),
+
+/***/ "./src/js/models/Selectors.js":
+/*!************************************!*\
+  !*** ./src/js/models/Selectors.js ***!
+  \************************************/
+/*! exports provided: Selectors */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Selectors\", function() { return Selectors; });\n\nconst Selectors = {\n    nav: document.querySelector('nav')\n};\n\n//# sourceURL=webpack:///./src/js/models/Selectors.js?");
+
+/***/ }),
+
+/***/ "./src/js/views/Navigation.js":
+/*!************************************!*\
+  !*** ./src/js/views/Navigation.js ***!
+  \************************************/
+/*! exports provided: toggleNav */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"toggleNav\", function() { return toggleNav; });\n/* harmony import */ var _models_Selectors__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../models/Selectors */ \"./src/js/models/Selectors.js\");\n\n\n//toggling the nav menu\n\nconst toggleNav = () => {\n    if(!document.querySelector('.menu')){\n        _models_Selectors__WEBPACK_IMPORTED_MODULE_0__[\"Selectors\"].nav.addEventListener('mouseenter', () => {\n            console.log(`You hovered the ${_models_Selectors__WEBPACK_IMPORTED_MODULE_0__[\"Selectors\"].nav}`);\n            setTimeout(() => {\n                addMenu();    \n            },150);\n        });\n    }\n    else if(document.queryselector('.menu')){\n        console.log(true);\n        _models_Selectors__WEBPACK_IMPORTED_MODULE_0__[\"Selectors\"].nav.addEventListener('mouseleave', () => {\n            document.querySelector('.menu').style.background = 'red';\n        });\n    }\n    \n};\n\nconst addMenu = () => {\n    \n        let menu = `\n               <div class=\"menu\">\n                  <a><p>About</p></a>\n                  <a><p>Gallery</p></a>\n                  <a><p>Contact</p></a>\n                <div>`;\n        \n                \n        _models_Selectors__WEBPACK_IMPORTED_MODULE_0__[\"Selectors\"].nav.insertAdjacentHTML(\"afterbegin\", menu);        \n};\n\n//# sourceURL=webpack:///./src/js/views/Navigation.js?");
 
 /***/ })
 
